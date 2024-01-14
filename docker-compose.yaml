@@ -1,0 +1,13 @@
+---
+version: "3.8"
+
+services:
+  dashboard:
+    image: joseluisq/static-web-server:latest
+    environment:
+      - SERVER_ROOT=/app
+      - SERVER_DIRECTORY_LISTING=true
+    volumes:
+      - "./:/app"
+    ports:
+      - "8080:80"

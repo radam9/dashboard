@@ -1,0 +1,164 @@
+/* all the commented colors have been set in the main.js script after loading the theme */
+body {
+    /*background-color: #102116;*/
+    font-family: Roboto, sans-serif;
+
+    margin: auto;
+    max-width: 95%;
+    max-height: 100%;
+    @media (min-width: 1366px) {
+        max-width: 70%;
+    }
+}
+
+.list-container {
+    padding: 2rem 0;
+}
+
+.sub-heading {
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    /*color: #E3D8CD;*/
+}
+
+#greeting-container {
+    display: grid;
+    justify-content: center;
+}
+
+#greeting-date-container {
+    display: flex;
+    gap: 3rem;
+    font-weight: 400;
+}
+
+.greeting-date {
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 0;
+    /*color: #97C193;*/
+}
+
+#greeting-text {
+    font-family: aref-ruqaa;
+    font-weight: 900;
+    font-size: 5rem;
+    margin: 0.5rem 0;
+    text-align: center;
+    /*color: #E3D8CD;*/
+}
+
+.category-container {
+    width: 100%;
+}
+
+.category-heading {
+    display: inline-block;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1.5rem;
+    /*color: #E3D8CD;*/
+}
+
+.category-sub-heading {
+    padding-top: 1rem;
+}
+
+.items-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    padding: 0;
+    list-style: none;
+
+    @media (max-width: 766px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+.item {
+    overflow: hidden;
+    position: relative;
+    list-style: none;
+}
+
+.item-container {
+    display: flex;
+    flex: 1 0 auto;
+    padding: 1rem;
+    /*color: #E3D8CD;*/
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.item-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+.item-icon {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+    /*color: #E3D8CD;*/
+    /* TODO: I am not sure where this value is set, but it is passed in to the icon */
+    /*font-size: 24px;*/
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name {
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.item-description {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 0.65rem;
+    font-weight: 400;
+    /*color: #97C193;*/
+}
+
+.bookmark-container {
+    display: flex;
+    flex-direction: column;
+    flex: 2 1 auto;
+    padding: 1rem 0;
+}
+
+.bookmark-link {
+    font-weight: 400;
+    text-decoration: none;
+    /*color: #97C193;*/
+    padding-top: 0.75rem;
+    font-size: 0.9rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

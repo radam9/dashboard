@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'aref-ruqaa';
+    font-style: normal;
+    font-weight: normal;
+    src: url('ArefRuqaa-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'aref-ruqaa';
+    font-style: normal;
+    font-weight: bold;
+    src: url('ArefRuqaa-Bold.ttf');
+}
